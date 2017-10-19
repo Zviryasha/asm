@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 18:03:56 by opanchen          #+#    #+#             */
-/*   Updated: 2017/10/18 12:42:30 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/10/19 14:41:52 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,8 @@ int		mane_2(int *i, char *s, char **data)
 {
 	char *name;
 
-	while (s[*i] == ' ')
-	{
-		while (s[*i] != '\n')
-			(*i)++;
+	while (s[*i] == ' ' || s[*i] == '\n')
 		(*i)++;
-	}
 	if (s[*i] == '.' && s[*i + 1] == 'n' && s[*i + 2] == 'a' && s[*i + 3] == 'm'
 			&& s[*i + 4] == 'e')
 	{
@@ -32,12 +28,8 @@ int		mane_2(int *i, char *s, char **data)
 	else
 		return (-1);
 	(*i)++;
-	while (s[*i] == ' ')
-	{
-		while (s[*i] != '\n')
-			(*i)++;
+	while (s[*i] == ' ' || s[*i] == '\n')
 		(*i)++;
-	}
 	return (0);
 }
 

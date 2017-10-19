@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 16:06:22 by opanchen          #+#    #+#             */
-/*   Updated: 2017/10/18 14:21:59 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/10/19 11:51:34 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ char	*check_arguments_ldi(char *s, char **data, struct s_lol *st)
 	struct s_ldi	l;
 	char			*v;
 
+	((*st).y)++;
 	l.stars = "";
 	if ((l.t = ldi_1(s, &v)) == NULL)
 		return (NULL);

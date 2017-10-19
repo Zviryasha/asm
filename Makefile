@@ -6,7 +6,7 @@
 #    By: opanchen <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/05/06 12:39:22 by opanchen          #+#    #+#              #
-#    Updated: 2017/10/18 15:27:30 by opanchen         ###   ########.fr        #
+#    Updated: 2017/10/19 15:03:27 by opanchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,10 @@ SRC = main.c \
 	  check_and_1.c \
 	  check_zjmp_1.c \
 	  sti_function_1.c \
-	  errors.c
+	  errors.c \
+	  corect_operation_1.c \
+	  empty.c \
+	  finder.c
 
 SRO = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/21 14:48:30 by opanchen          #+#    #+#             */
-/*   Updated: 2017/10/18 18:43:31 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/10/19 17:56:07 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef	struct	s_lol
 	int			*a;
 	char		*s;
 	char		*lable;
+	int			y;
 }				t_lol;
 
 typedef struct	s_pop
@@ -93,8 +94,8 @@ int				cle_1(char *s, int *i, int *k, char *coment);
 int				na_co_la(char **s, char *ac, char **data, struct s_lol *st);
 int				bet_main(char *ac);
 int				find_operation_1(char *s, char **d, struct s_lol *st, int *a);
-int				find_operation_2(char *s, char **data, struct s_lol *st);
-int				find_operation_3(char *s, char **data, struct s_lol *st);
+int				find_operation_2(char *s, char **d, struct s_lol *st, int *a);
+int				find_operation_3(char *s, char **d, struct s_lol *st, int *a);
 char			**live_1(char *s);
 int				live_2(struct s_pop *r, char **d, struct s_lol *st, char **v);
 void			live_3(char **t, int *i, struct s_pop *p, char **v);
@@ -142,4 +143,13 @@ void			horos(char **f, char **data, int *y, int e);
 void			gogo(char **f, struct s_lol *st, int *h, int y);
 void			hoyoy(long long int *k);
 void			errors(int i);
+int				or_is_lable(char *lable, char *str);
+int				find_operation_4(char *s, char **d, struct s_lol *st, int *a);
+int				find_operation_5(char *s, char **d, struct s_lol *st, int *a);
+int				find_operation_6(char *s, char **d, struct s_lol *st, int *a);
+int				find_operation_7(char *s, char **d, struct s_lol *st, int *a);
+void			doroy(int i);
+int				empty(char *data);
+int				find_i(char **s);
+char			*ft_itoa_base2(long long int value, int base);
 #endif

@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/12 16:07:27 by opanchen          #+#    #+#             */
-/*   Updated: 2017/10/18 18:22:41 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/10/19 14:47:04 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ int		bet_main(char *ac)
 			return (g);
 		calc(&data);
 		kripo(st.lable, &data, &st);
+		if (empty(data) == -1)
+			return (-50);
 		write_file(data, ac);
 	}
 	else
